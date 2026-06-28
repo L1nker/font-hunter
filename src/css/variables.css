@@ -1,0 +1,220 @@
+/* ==========================================================================
+   variables.css — Design Tokens oficiais do Font Hunter
+   Baseado em: DESIGN.md, Capítulo 3
+   Regra: nenhum componente deve usar valores fixos quando existir um token.
+   ========================================================================== */
+
+:root {
+
+  /* --------------------------------------------------------------------------
+     Cores — Primárias
+     Azul → ação principal (DESIGN.md: "Azul → ação principal")
+  -------------------------------------------------------------------------- */
+  --color-primary:          #2563EB;
+  --color-primary-hover:    #1D4ED8;
+  --color-primary-active:   #1E40AF;
+  --color-primary-disabled: #93C5FD;
+  --color-primary-subtle:   #EFF6FF;
+
+  /* --------------------------------------------------------------------------
+     Cores — Backgrounds (tema claro, padrão)
+  -------------------------------------------------------------------------- */
+  --color-bg:               #F9FAFB;
+  --color-surface:          #FFFFFF;
+  --color-surface-secondary:#F3F4F6;
+  --color-surface-hover:    #F0F4FF;
+
+  /* --------------------------------------------------------------------------
+     Cores — Texto
+  -------------------------------------------------------------------------- */
+  --color-text-primary:     #111827;
+  --color-text-secondary:   #4B5563;
+  --color-text-muted:       #9CA3AF;
+  --color-text-inverse:     #FFFFFF;
+
+  /* --------------------------------------------------------------------------
+     Cores — Bordas
+  -------------------------------------------------------------------------- */
+  --color-border:           #E5E7EB;
+  --color-border-strong:    #D1D5DB;
+  --color-divider:          #F3F4F6;
+
+  /* --------------------------------------------------------------------------
+     Cores — Estados semânticos
+     (DESIGN.md: Verde → sucesso, Amarelo → atenção, Vermelho → erro)
+  -------------------------------------------------------------------------- */
+  --color-success:          #16A34A;
+  --color-success-bg:       #F0FDF4;
+  --color-warning:          #CA8A04;
+  --color-warning-bg:       #FEFCE8;
+  --color-danger:           #DC2626;
+  --color-danger-bg:        #FEF2F2;
+  --color-info:             #0284C7;
+  --color-info-bg:          #F0F9FF;
+
+  /* --------------------------------------------------------------------------
+     Cores — Bibliotecas (identificação visual)
+  -------------------------------------------------------------------------- */
+  --color-google-fonts:     #4285F4;
+  --color-fontshare:        #000000;
+  --color-font-squirrel:    #6B7280;
+  --color-bunny-fonts:      #F97316;
+  --color-open-foundry:     #7C3AED;
+
+  /* --------------------------------------------------------------------------
+     Tipografia — Família
+  -------------------------------------------------------------------------- */
+  --font-family-base:       'Inter', -apple-system, BlinkMacSystemFont,
+                            'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-family-mono:       'JetBrains Mono', 'Fira Code', 'Cascadia Code',
+                            Consolas, 'Courier New', monospace;
+
+  /* --------------------------------------------------------------------------
+     Tipografia — Escala de tamanhos
+  -------------------------------------------------------------------------- */
+  --font-size-display-xl:   3rem;       /* 48px */
+  --font-size-display-l:    2.25rem;    /* 36px */
+  --font-size-h1:           1.875rem;   /* 30px */
+  --font-size-h2:           1.5rem;     /* 24px */
+  --font-size-h3:           1.25rem;    /* 20px */
+  --font-size-body-large:   1.125rem;   /* 18px */
+  --font-size-body:         1rem;       /* 16px */
+  --font-size-body-small:   0.875rem;   /* 14px */
+  --font-size-caption:      0.75rem;    /* 12px */
+  --font-size-overline:     0.6875rem;  /* 11px */
+
+  /* --------------------------------------------------------------------------
+     Tipografia — Pesos
+  -------------------------------------------------------------------------- */
+  --font-weight-regular:    400;
+  --font-weight-medium:     500;
+  --font-weight-semibold:   600;
+  --font-weight-bold:       700;
+
+  /* --------------------------------------------------------------------------
+     Tipografia — Altura de linha
+  -------------------------------------------------------------------------- */
+  --line-height-tight:      1.25;
+  --line-height-snug:       1.375;
+  --line-height-normal:     1.5;
+  --line-height-relaxed:    1.625;
+
+  /* --------------------------------------------------------------------------
+     Espaçamento — Escala
+  -------------------------------------------------------------------------- */
+  --space-xs:   0.25rem;   /*  4px */
+  --space-s:    0.5rem;    /*  8px */
+  --space-m:    0.75rem;   /* 12px */
+  --space-l:    1rem;      /* 16px */
+  --space-xl:   1.5rem;    /* 24px */
+  --space-2xl:  2rem;      /* 32px */
+  --space-3xl:  3rem;      /* 48px */
+  --space-4xl:  4rem;      /* 64px */
+  --space-5xl:  6rem;      /* 96px */
+
+  /* --------------------------------------------------------------------------
+     Raios de Borda
+     (DESIGN.md: "Todo o sistema utiliza cantos arredondados")
+  -------------------------------------------------------------------------- */
+  --radius-s:   0.25rem;   /*  4px */
+  --radius-m:   0.5rem;    /*  8px */
+  --radius-l:   0.75rem;   /* 12px */
+  --radius-xl:  1rem;      /* 16px */
+  --radius-2xl: 1.5rem;    /* 24px */
+  --radius-full: 9999px;
+
+  /* --------------------------------------------------------------------------
+     Sombras — Discretas, criam profundidade sem chamar atenção (DESIGN.md)
+  -------------------------------------------------------------------------- */
+  --shadow-s:        0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-m:        0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-l:        0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-floating: 0 10px 15px rgba(0, 0, 0, 0.10), 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  /* --------------------------------------------------------------------------
+     Animações — Tokens de velocidade e easing (DESIGN.md)
+  -------------------------------------------------------------------------- */
+  --duration-fast:    150ms;
+  --duration-normal:  250ms;
+  --duration-slow:    400ms;
+  --ease-default:     cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth:      cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-bounce:      cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* --------------------------------------------------------------------------
+     Z-Index — Níveis da interface
+  -------------------------------------------------------------------------- */
+  --z-background:  -1;
+  --z-content:      1;
+  --z-header:      10;
+  --z-dropdown:    20;
+  --z-modal:       30;
+  --z-tooltip:     40;
+  --z-notification:50;
+
+  /* --------------------------------------------------------------------------
+     Opacidade — Estados
+  -------------------------------------------------------------------------- */
+  --opacity-disabled: 0.4;
+  --opacity-overlay:  0.5;
+  --opacity-hover:    0.08;
+  --opacity-pressed:  0.12;
+
+  /* --------------------------------------------------------------------------
+     Ícones — Tamanhos
+  -------------------------------------------------------------------------- */
+  --icon-s:    1rem;    /* 16px */
+  --icon-m:    1.25rem; /* 20px */
+  --icon-l:    1.5rem;  /* 24px */
+  --icon-xl:   2rem;    /* 32px */
+
+  /* --------------------------------------------------------------------------
+     Layout — Breakpoints (usados em media queries, não como variáveis CSS)
+     Mobile:  < 640px
+     Tablet:  640px – 1024px
+     Desktop: > 1024px
+     Wide:    > 1280px
+  -------------------------------------------------------------------------- */
+  --max-width-content: 1200px;
+  --max-width-narrow:   720px;
+
+}
+
+/* ==========================================================================
+   Tema Escuro — Dark Mode
+   Sobrescreve apenas os tokens necessários.
+   (DESIGN.md: toda funcionalidade do tema claro deve funcionar no escuro)
+   ========================================================================== */
+[data-theme="dark"] {
+
+  --color-bg:               #0F1117;
+  --color-surface:          #1A1D27;
+  --color-surface-secondary:#22263A;
+  --color-surface-hover:    #1E2337;
+
+  --color-text-primary:     #F9FAFB;
+  --color-text-secondary:   #9CA3AF;
+  --color-text-muted:       #6B7280;
+  --color-text-inverse:     #111827;
+
+  --color-border:           #2D3148;
+  --color-border-strong:    #3D4263;
+  --color-divider:          #1E2337;
+
+  --color-primary:          #3B82F6;
+  --color-primary-hover:    #60A5FA;
+  --color-primary-active:   #93C5FD;
+  --color-primary-disabled: #1D4ED8;
+  --color-primary-subtle:   #1E3A5F;
+
+  --color-success-bg:       #052E16;
+  --color-warning-bg:       #422006;
+  --color-danger-bg:        #450A0A;
+  --color-info-bg:          #082F49;
+
+  --shadow-s:        0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-m:        0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-l:        0 4px 6px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-floating: 0 10px 15px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.4);
+
+}

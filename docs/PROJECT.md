@@ -151,6 +151,79 @@ Mas também responder:
 
 ---
 
+## Font Discovery
+
+O Font Hunter vai além da identificação por imagem.
+
+A página inicial também serve como ponto de entrada para a descoberta de fontes gratuitas, mesmo para usuários que não possuem uma imagem para analisar.
+
+### O que é o Font Discovery?
+
+Font Discovery é a área da home dedicada à exploração tipográfica espontânea.
+
+Ela permite que o usuário descubra fontes interessantes sem nenhum objetivo específico, da mesma forma que se navega por uma curadoria visual.
+
+### Funcionalidades previstas
+
+**Recomendações da Semana**
+
+Curadoria manual realizada pela equipe do Font Hunter.
+
+Fontes selecionadas com base em qualidade, versatilidade e relevância atual.
+
+Atualizadas periodicamente.
+
+---
+
+**Novidades do Google Fonts**
+
+Lista automática das fontes adicionadas mais recentemente ao catálogo do Google Fonts.
+
+Atualizada via integração com a API oficial.
+
+---
+
+**Fontes Populares**
+
+Ranking das fontes mais acessadas ou favoritadas pelos usuários da plataforma.
+
+Dados baseados em estatísticas de uso (sem identificação pessoal).
+
+---
+
+**Fonte Aleatória**
+
+Um botão que apresenta uma fonte gratuita aleatória ao usuário.
+
+Útil para inspiração tipográfica sem intenção prévia.
+
+---
+
+### Princípios do Font Discovery
+
+Toda fonte exibida nessa área deverá:
+
+* ser gratuita;
+* possuir licença clara;
+* estar disponível em pelo menos uma das bibliotecas integradas;
+* seguir o modelo interno de dados do projeto.
+
+O Font Discovery não é uma área de propaganda.
+
+Nenhuma fonte poderá aparecer em destaque por razões comerciais.
+
+---
+
+### Relação com a arquitetura existente
+
+O Font Discovery utiliza a mesma camada de serviços já definida para as demais integrações.
+
+Nenhuma chamada HTTP será feita diretamente na interface.
+
+Toda curadoria e dados externos passarão pela camada de serviços antes de chegar à interface.
+
+---
+
 # O que o Font Hunter NÃO é
 
 O Font Hunter não é:
